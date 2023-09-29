@@ -1,0 +1,97 @@
+*{
+    
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    scroll-snap-type: mandatory;
+}
+
+.section{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    scroll-snap-align: start;
+    background: #fff;
+}
+
+#blog-back-img{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('a-person-holding-a-vaccine.jpg');
+    background-size: cover;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: transform 0.2s ease;
+}
+#overlay{
+    background-color: rgba(7, 37, 136, 0.685);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.blog-head-text{
+    margin-bottom: 80px;
+}
+
+.buttons{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+ 
+}
+
+.retun-to-blogs{
+    padding: 10px;
+    font-size: 12pt;
+    background-color: rgba(12, 12, 70, 0.849);
+    color: #fff;
+    border-radius: 7px;
+    border-width: 0.1px;
+}
+
+.blog-dp{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.blog-title{
+    font-size: 70px;
+    color: #fff;
+}
+.blog-date{
+    font-size: x-larger;
+    color: #fff;
+}
+
+.blog-author{
+    font-size: x-large;
+    color: #fff;
+}
+            

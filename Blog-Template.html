@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Effect</title>
+    <link rel="stylesheet" href="Blog-Template.css" />
+</head>
+<body>
+    <div id="blog-back-img"></div>
+    <div class="container">
+        <div class="section" id="overlay">
+            <div class="buttons">
+                <a href="blogs.html"><input type="button" value="Blogs" class="retun-to-blogs"/></a>
+            </div>
+            <div class="blog-head-text">
+                <h2 class="blog-title">The emergence of vaccines in Africa</h2>
+                <p class="blog-date" class="blog-date">Sep 20, 2023</p>
+                <p class="blog-author">By Anders Uche (PhD)</p>
+                <img src="emma pg1.jpeg" class="blog-dp"/>
+            </div>
+        </div>
+        <div class="section">
+            <h1>Blog Page No 1</h1>
+        </div>
+        <div class="section">
+            <h1>Blog Page No 2</h1>
+        </div>
+        <div class="section">
+            <h1>Blog Page No 3</h1>
+        </div>
+    </div>
+
+    <script>
+        const background = document.getElementById("blog-back-img");
+        
+        window.addEventListener('scroll', function () {
+            const scrollY = window.scrollY;
+            background.style.transform = `translateY(${scrollY * 0.09}px)`; /* Adjust the factor for parallax effect */
+        });
+    </script>
+</body>
+</html>
