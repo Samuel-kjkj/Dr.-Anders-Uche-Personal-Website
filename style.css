@@ -8,6 +8,7 @@ html{
 }
 
 body{
+    top: 0;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -24,9 +25,11 @@ body::-webkit-scrollbar{
 }
 
 .section{
+
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
     scroll-snap-align: start;
 }
 
@@ -196,13 +199,10 @@ background: linear-gradient(90deg, rgb(202, 205, 214) 0%, rgb(145, 145, 170) 0%,
     line-height: 30px;
 }
 
-#page2{
-    height: 100vh;
-    background-color: blue;
-    
-}
 
 #page2{
+    height: 900px;
+    margin-bottom: 200px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -295,5 +295,27 @@ background: linear-gradient(90deg, rgb(202, 205, 214) 0%, rgb(145, 145, 170) 0%,
     padding-right: 20px;
     color: #fff;
 }
+
+.about-carousel {
+  background-color: #9999;
+  width: 94%;
+  height: 40%;
+  border-radius: 10px;
+
+}
+
+#about-carousel {
+    background-color: #9999;
+    width: 74%;
+    height: 40%;
+    border-radius: 10px;  
+  }
+
+  .carousel-item {
+    aspect-ratio: 2 / 1;
+  }
+  
+
+
 
 
